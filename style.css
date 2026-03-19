@@ -24,7 +24,6 @@ body {
     min-height: 100vh;
 }
 
-/* --- CONTADOR --- */
 .timer-container {
     background: var(--card-bg);
     backdrop-filter: blur(15px);
@@ -45,7 +44,6 @@ body {
     text-shadow: 0 0 10px rgba(30,144,255,0.6);
 }
 
-/* --- GRID DE FOTOS --- */
 .grid-paineis {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,7 +79,6 @@ body {
     margin: 0;
 }
 
-/* BOTÃO ADICIONAR */
 .btn-add {
     background: var(--accent);
     color: white;
@@ -102,7 +99,6 @@ body {
     box-shadow: 0 0 10px rgba(30,144,255,0.6);
 }
 
-/* CARROSSEL */
 .carousel-main {
     position: relative;
     width: 100%;
@@ -133,7 +129,6 @@ body {
     object-fit: contain;
 }
 
-/* BOTÕES NAVEGAÇÃO */
 .nav-btn {
     position: absolute;
     top: 50%;
@@ -155,12 +150,10 @@ body {
 .btn-l { left: 10px; }
 .btn-r { right: 10px; }
 
-/* INPUT ESCONDIDO */
 input[type="file"] {
     display: none;
 }
 
-/* GRID DE AÇÕES */
 .actions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -187,7 +180,6 @@ input[type="file"] {
     transform: translateY(-3px);
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
     .grid-paineis {
         grid-template-columns: 1fr;

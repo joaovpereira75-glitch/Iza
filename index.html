@@ -105,6 +105,31 @@
                     <div class="slide"><img src="img/princesa_grupo_20.jpeg"></div>
                     <div class="slide"><img src="img/princesa_grupo_21.jpeg"></div>
                     <div class="slide"><img src="img/princesa_grupo_22.jpeg"></div>
+                    <div class="slide"><img src="img/thebest1.jpeg"></div>
+                    <div class="slide"><img src="img/thebest2.jpeg"></div>
+                    <div class="slide"><img src="img/thebest3.jpeg"></div>
+                    <div class="slide"><img src="img/thebest4.jpeg"></div>
+                    <div class="slide"><img src="img/thebest5.jpeg"></div>
+                    <div class="slide"><img src="img/thebest6.jpeg"></div>
+                    <div class="slide"><img src="img/thebest7.jpeg"></div>
+                    <div class="slide"><img src="img/thebest8.jpeg"></div>
+                    <div class="slide"><img src="img/thebest9.jpeg"></div>
+                    <div class="slide"><img src="img/thebest10.jpeg"></div>
+                    <div class="slide"><img src="img/thebest11.jpeg"></div>
+                    <div class="slide"><img src="img/thebest12.jpeg"></div>
+                    <div class="slide"><img src="img/thebest13.jpeg"></div>
+                    <div class="slide"><img src="img/thebest14.jpeg"></div>
+                    <div class="slide"><img src="img/thebest15.jpeg"></div>
+                    <div class="slide"><img src="img/thebest16.jpeg"></div>
+                    <div class="slide"><img src="img/thebest17.jpeg"></div>
+                    <div class="slide"><img src="img/thebest18.jpeg"></div>
+                    <div class="slide"><img src="img/thebest19.jpeg"></div>
+                    <div class="slide"><img src="img/thebest20.jpeg"></div>
+                    <div class="slide"><img src="img/thebest21.jpeg"></div>
+                    <div class="slide"><img src="img/thebest22.jpeg"></div>
+                    <div class="slide"><img src="img/thebest23.jpeg"></div>
+                    <div class="slide"><img src="img/thebest24.jpeg"></div>
+                    <div class="slide"><img src="img/thebest25.jpeg"></div>
                 </div>
                 <button class="nav-btn btn-r" onclick="moveSlide(2, 1)">&#10095;</button>
             </div>
@@ -120,7 +145,6 @@
     </div>
 
     <script>
-        // Contador
         function atualizarContador() {
             const dataInicio = new Date('2025-02-10T00:00:00');
             const agora = new Date();
@@ -128,7 +152,6 @@
             document.getElementById('dias').innerText = totalDias > 0 ? totalDias : 0;
         }
 
-        // Carrossel
         let currentPositions = [0, 0, 0];
         function moveSlide(trackIndex, direction) {
             const track = document.getElementById('track' + trackIndex);
@@ -137,7 +160,6 @@
             track.style.transform = `translateX(-${currentPositions[trackIndex] * 100}%)`;
         }
 
-        // --- FUNÇÕES DE ADICIONAR FOTO ---
         function triggerInput(index) {
             document.getElementById('input' + index).click();
         }
@@ -149,14 +171,12 @@
                 reader.onload = function(e) {
                     const track = document.getElementById('track' + index);
                     
-                    // Cria novo slide
                     const newSlide = document.createElement('div');
                     newSlide.className = 'slide';
                     newSlide.innerHTML = `<img src="${e.target.result}">`;
                     
                     track.appendChild(newSlide);
                     
-                    // Move para a foto nova automaticamente
                     moveSlide(index, track.children.length - 1);
                 }
                 reader.readAsDataURL(file);

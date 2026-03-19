@@ -14,14 +14,12 @@
     <div id="lista"></div>
 </div>
 
-<!-- MÚSICA -->
 <audio id="musica" autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
 </audio>
 
 <script>
 
-/* FRASES */
 const inicio = [
 "Eu te amo porque",
 "Eu te amo pois",
@@ -65,7 +63,6 @@ function gerarMotivo() {
     return `${i} ${m} ${f}`;
 }
 
-/* GERAR 1000 */
 const lista = document.getElementById("lista");
 
 for (let i = 1; i <= 1000; i++) {
@@ -75,7 +72,6 @@ for (let i = 1; i <= 1000; i++) {
     lista.appendChild(div);
 }
 
-/* CORAÇÕES */
 function criarCoracao() {
     const heart = document.createElement("div");
     heart.className = "heart";

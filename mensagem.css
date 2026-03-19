@@ -5,7 +5,6 @@ body {
     overflow-x: hidden;
 }
 
-/* CONTAINER */
 .container {
     max-width: 900px;
     margin: auto;
@@ -13,13 +12,11 @@ body {
     color: #e0f7ff;
 }
 
-/* TÍTULO */
 h1 {
     text-align: center;
     color: #00c6ff;
 }
 
-/* CARDS */
 .motivo {
     background: rgba(255,255,255,0.95);
     color: #003049;
@@ -34,7 +31,6 @@ h1 {
     to {opacity:1; transform:translateY(0);}
 }
 
-/* CORAÇÕES */
 .heart {
     position: fixed;
     top: -10px;

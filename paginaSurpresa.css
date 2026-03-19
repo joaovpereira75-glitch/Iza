@@ -16,7 +16,6 @@ body {
     color: var(--text);
 }
 
-/* CENTRO */
 .centro {
     position: relative;
     z-index: 10;
@@ -29,14 +28,12 @@ body {
     box-shadow: 0 0 60px rgba(30,144,255,0.3);
 }
 
-/* TÍTULO */
 h1 {
     font-size: 2.5rem;
     margin: 0;
     text-shadow: 0 0 20px var(--accent);
 }
 
-/* TEXTO FLUTUANTE */
 .eu-te-amo {
     position: absolute;
     white-space: nowrap;
@@ -47,13 +44,11 @@ h1 {
     animation: flutuar linear infinite;
 }
 
-/* ANIMAÇÃO */
 @keyframes flutuar {
     from { transform: translateY(100vh); }
     to { transform: translateY(-110vh); }
 }
 
-/* BOTÃO */
 .btn-voltar {
     position: fixed;
     bottom: 30px;
@@ -68,7 +63,6 @@ h1 {
     box-shadow: 0 0 15px rgba(30,144,255,0.5);
 }
 
-/* HOVER */
 .btn-voltar:hover {
     background: #4da6ff;
     box-shadow: 0 0 25px rgba(30,144,255,0.8);

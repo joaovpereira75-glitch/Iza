@@ -23,32 +23,25 @@
             const span = document.createElement("span");
             span.className = "eu-te-amo";
 
-            // Escolhe idioma aleatório
             span.innerText = idiomas[Math.floor(Math.random() * idiomas.length)];
             
-            // Posição horizontal aleatória
             span.style.left = Math.random() * 95 + "vw";
             
-            // Tamanho aleatório
             const tamanho = Math.random() * (2 - 0.8) + 0.8;
             span.style.fontSize = tamanho + "rem";
             
-            // TEMPO ORIGINAL: Velocidade aleatória (entre 10s e 25s)
             const duracao = Math.random() * (25 - 10) + 10;
             span.style.animationDuration = duracao + "s";
             
-            // Opacidade aleatória para dar profundidade
             span.style.opacity = Math.random() * (0.6 - 0.1) + 0.1;
 
             document.body.appendChild(span);
 
-            // Remove o elemento após a animação terminar
             setTimeout(() => {
                 span.remove();
             }, duracao * 1000);
         }
 
-        // SURGIMENTO ORIGINAL: Uma nova palavra a cada 300 milissegundos
         setInterval(criarPalavra, 300);
     </script>
 </body>
