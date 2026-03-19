@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Motivos para te Amar ❤️</title>
+    <link rel="stylesheet" href="mensagem.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    
+    
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1>Para o meu grande amor ❤️</h1>
+            <p>Role para baixo e descubra 1000 razões pelas quais eu te amo.</p>
+            <div class="heart-divider">❤</div>
+        </header>
+
+        <div id="lista-motivos" class="lista-motivos"></div>
+
+        <footer class="footer">
+            <p>...e eu poderia escrever mais um milhão.</p>
+        </footer>
+    </main>
+
+    <script>
+        const container = document.getElementById('lista-motivos');
+
+        // GERAR 1000 MOTIVOS AUTOMATICAMENTE
+        const motivos = [];
+        for (let i = 1; i <= 1000; i++) {
+            motivos.push(`Motivo ${i}: Eu te amo por tudo que você é ❤️`);
+        }
+
+        // MOSTRAR NA TELA
+        motivos.forEach((texto, index) => {
+            const div = document.createElement('div');
+            div.className = 'motivo-card';
+            div.innerHTML = `
+                <span class="numero">#${index + 1}</span>
+                <p>${texto}</p>
+            `;
+            container.appendChild(div);
+        });
+
+        // CORAÇÕES CAINDO
+        function criarCoracao() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤️";
+
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(criarCoracao, 300);
+    </script>
+
+</body>
+</html>
