@@ -1,20 +1,28 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* azul royal vibe */
     overflow-x: hidden;
 }
 
+/* CONTAINER */
 .container {
     max-width: 900px;
     margin: auto;
     padding: 20px;
-    color: white;
+    color: #e0f7ff;
 }
 
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #00c6ff;
+}
+
+/* CARDS */
 .motivo {
-    background: white;
-    color: black;
+    background: rgba(255,255,255,0.95);
+    color: #003049;
     padding: 12px;
     margin: 6px;
     border-radius: 12px;
@@ -36,7 +44,5 @@ body {
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
+    to { transform: translateY(100vh); }
 }

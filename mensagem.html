@@ -3,29 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1000 Motivos ❤️</title>
+<title>Para Você 💙</title>
 <link rel="stylesheet" href="mensagem.css">
-
 </head>
 
 <body>
 
 <div class="container">
-    <h1 id="titulo"></h1>
+    <h1>Para você 💙</h1>
     <div id="lista"></div>
 </div>
 
-<script>
-/* 👉 COLOQUE O NOME AQUI SE QUISER */
-const nome = "Meu Amor ❤️"; // você pode trocar
+<!-- MÚSICA -->
+<audio id="musica" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
 
-document.getElementById("titulo").innerText = "Para " + nome;
+<script>
 
 /* FRASES */
 const inicio = [
 "Eu te amo porque",
 "Eu te amo pois",
-"Eu te amo simplesmente porque",
 "Eu te amo de verdade porque",
 "Eu te amo mais a cada dia porque"
 ];
@@ -50,16 +49,13 @@ const meio = [
 ];
 
 const final = [
-"todos os dias ❤️",
+"todos os dias 💙",
 "em todos os momentos",
-"mesmo quando tudo está difícil",
 "mais do que palavras podem explicar",
-"de um jeito que não sei descrever",
 "para sempre",
 "infinitamente",
 "com todo meu coração",
-"mais do que tudo",
-"sem motivo nenhum"
+"mais do que tudo"
 ];
 
 function gerarMotivo() {
@@ -83,7 +79,7 @@ for (let i = 1; i <= 1000; i++) {
 function criarCoracao() {
     const heart = document.createElement("div");
     heart.className = "heart";
-    heart.innerHTML = "❤️";
+    heart.innerHTML = "💙";
 
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
@@ -95,6 +91,7 @@ function criarCoracao() {
 }
 
 setInterval(criarCoracao, 250);
+
 </script>
 
 </body>
