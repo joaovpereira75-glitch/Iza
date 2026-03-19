@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Para você, com amor ✨</h1>
+
+    <div class="timer-container">
+        <span id="dias">0</span>
+        <p style="margin: 0; color: var(--subtext); font-size: 0.9rem;">dias de amizade</p>
+    </div>
+
+    <div class="grid-paineis">
+        
+        <div class="section-wrapper">
+            <div class="header-section">
+                <span class="category-title">Fotos da minha princesa</span>
+                <button class="btn-add" onclick="triggerInput(0)">+</button>
+                <input type="file" id="input0" accept="image/*" onchange="addPhoto(event, 0)">
+            </div>
+            <div class="carousel-main">
+                <button class="nav-btn btn-l" onclick="moveSlide(0, -1)">&#10094;</button>
+                <div class="track" id="track0">
+                    <div class="slide"><img src="img/princesa_1.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_2.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_3.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_4.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_5.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_6.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_7.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_8.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_9.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_10.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_11.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_12.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_13.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_14.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_15.jpeg"></div>
+                </div>
+                <button class="nav-btn btn-r" onclick="moveSlide(0, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="section-wrapper">
+            <div class="header-section">
+                <span class="category-title">Nós</span>
+                <button class="btn-add" onclick="triggerInput(1)">+</button>
+                <input type="file" id="input1" accept="image/*" onchange="addPhoto(event, 1)">
+            </div>
+            <div class="carousel-main">
+                <button class="nav-btn btn-l" onclick="moveSlide(1, -1)">&#10094;</button>
+                <div class="track" id="track1">
+                    <div class="slide"><img src="img/Iza_e_eu_1.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_2.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_3.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_4.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_5.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_6.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_7.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_8.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_9.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_10.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_11.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_12.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_13.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_14.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_15.jpeg"></div>
+                    <div class="slide"><img src="img/Iza_e_eu_16.jpeg"></div>
+                </div>
+                <button class="nav-btn btn-r" onclick="moveSlide(1, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="section-wrapper full-width">
+            <div class="header-section">
+                <span class="category-title">Grupo</span>
+                <button class="btn-add" onclick="triggerInput(2)">+</button>
+                <input type="file" id="input2" accept="image/*" onchange="addPhoto(event, 2)">
+            </div>
+            <div class="carousel-main">
+                <button class="nav-btn btn-l" onclick="moveSlide(2, -1)">&#10094;</button>
+                <div class="track" id="track2">
+                    <div class="slide"><img src="img/princesa_grupo_1.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_2.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_3.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_4.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_5.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_6.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_9.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_10.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_11.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_12.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_13.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_14.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_15.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_16.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_17.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_18.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_19.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_20.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_21.jpeg"></div>
+                    <div class="slide"><img src="img/princesa_grupo_22.jpeg"></div>
+                </div>
+                <button class="nav-btn btn-r" onclick="moveSlide(2, 1)">&#10095;</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="actions-grid">
+    <a href="SUA_URL_DA_MUSICA" class="action-link">🎵 Música</a>
+    <a href="SUA_URL_DA_MENSAGEM" class="action-link">✉️ Mensagem</a>
+    <a href="paginaSurpresa.html" class="action-link">🎁 Surpresa</a>
+</div>
+    </div>
+
+    <script>
+        // Contador
+        function atualizarContador() {
+            const dataInicio = new Date('2025-02-10T00:00:00');
+            const agora = new Date();
+            const totalDias = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+            document.getElementById('dias').innerText = totalDias > 0 ? totalDias : 0;
+        }
+
+        // Carrossel
+        let currentPositions = [0, 0, 0];
+        function moveSlide(trackIndex, direction) {
+            const track = document.getElementById('track' + trackIndex);
+            const totalSlides = track.children.length;
+            currentPositions[trackIndex] = (currentPositions[trackIndex] + direction + totalSlides) % totalSlides;
+            track.style.transform = `translateX(-${currentPositions[trackIndex] * 100}%)`;
+        }
+
+        // --- FUNÇÕES DE ADICIONAR FOTO ---
+        function triggerInput(index) {
+            document.getElementById('input' + index).click();
+        }
+
+        function addPhoto(event, index) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const track = document.getElementById('track' + index);
+                    
+                    // Cria novo slide
+                    const newSlide = document.createElement('div');
+                    newSlide.className = 'slide';
+                    newSlide.innerHTML = `<img src="${e.target.result}">`;
+                    
+                    track.appendChild(newSlide);
+                    
+                    // Move para a foto nova automaticamente
+                    moveSlide(index, track.children.length - 1);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        atualizarContador();
+    </script>
+</body>
+</html>
